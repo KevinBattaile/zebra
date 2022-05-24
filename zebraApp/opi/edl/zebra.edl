@@ -1,0 +1,822 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 850
+y 559
+w 940
+h 610
+font "helvetica-medium-r-14.0"
+ctlFont "helvetica-bold-r-14.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 0
+ctlBgColor1 index 3
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 11
+title "Zebra - $(zebra)"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 945
+h 30
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 2
+w 944
+h 25
+lineColor index 1
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 3
+w 944
+h 25
+lineColor index 11
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 1
+y 3
+w 944
+h 24
+fgColor index 14
+bgColor index 3
+topShadowColor index 0
+botShadowColor index 0
+font "helvetica-bold-r-14.0"
+xPosOffset 5
+yPosOffset 5
+button3Popup
+invisible
+buttonLabel "tooltip"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "generic-tooltip"
+}
+setPosition {
+  0 "button"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 1
+y 3
+w 1041
+h 25
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 48
+value {
+  "Zebra Setup - $(zebra)"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 50
+h 30
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 48
+h 29
+lineColor index 1
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 2
+w 48
+h 29
+lineColor index 11
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 2
+w 47
+h 27
+lineColor index 49
+fill
+fillColor index 48
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 6
+w 4
+h 3
+lineColor index 1
+fill
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 0
+y 0
+w 50
+h 30
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Setup"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 880
+y 580
+w 55
+h 25
+fgColor index 46
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 294
+y 64
+w 640
+h 510
+lineColor index 11
+fillColor index 0
+numPoints 3
+xPoints {
+  0 294
+  1 294
+  2 934
+}
+yPoints {
+  0 574
+  1 64
+  2 64
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 355
+y 580
+w 110
+h 25
+controlPv "$(zebra):CONNECTED"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 295
+y 580
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Comms:"
+}
+endObjectProperties
+
+# (multiLineTextUpdate)
+object multiLineTextUpdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 25
+y 65
+w 120
+h 462
+controlPv "$(zebra):SYS_BUS1"
+fgColour index 14
+fgAlarm
+bgColour index 3
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (multiLineTextUpdate)
+object multiLineTextUpdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 170
+y 65
+w 120
+h 462
+controlPv "$(zebra):SYS_BUS2"
+fgColour index 14
+fgAlarm
+bgColour index 3
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 70
+w 13
+h 225
+controlPv "$(zebra):SYS_STAT1LO"
+lineColor index 14
+onColor index 15
+offColor index 19
+endian "little"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 295
+w 13
+h 225
+controlPv "$(zebra):SYS_STAT1HI"
+lineColor index 14
+onColor index 15
+offColor index 19
+endian "little"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 70
+w 13
+h 225
+controlPv "$(zebra):SYS_STAT2LO"
+lineColor index 14
+onColor index 15
+offColor index 19
+endian "little"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 295
+w 13
+h 225
+controlPv "$(zebra):SYS_STAT2HI"
+lineColor index 14
+onColor index 15
+offColor index 19
+endian "little"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 550
+w 13
+h 52
+controlPv "$(zebra):SYS_STATERR"
+lineColor index 14
+onColor index 20
+offColor index 24
+endian "little"
+numBits 4
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 550
+w 13
+h 52
+controlPv "$(zebra):SYS_STATERR"
+lineColor index 14
+onColor index 20
+offColor index 24
+endian "little"
+numBits 4
+shift 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 35
+y 550
+w 112
+h 52
+font "courier-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "PULSE1 \\  got"
+  "PULSE2  \\ trig"
+  "PULSE3  / while"
+  "PULSE4 /  active"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 294
+y 40
+w 642
+h 25
+fgColor index 14
+bgColor index 3
+selectColor index 5
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "LOC\\$(!W)tab=e:0,PC,AND,OR,GATE,DIV,PULSE,ENC,SYS"
+font "helvetica-bold-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 295
+y 65
+w 640
+h 510
+fgColor index 14
+bgColor index 3
+topShadowColor index 0
+botShadowColor index 0
+displaySource "menu"
+filePv "LOC\\$(!W)tab"
+sizeOfs 5
+numDsps 8
+displayFileName {
+  0 "zebraPC"
+  1 "zebraANDOR"
+  2 "zebraANDOR"
+  3 "zebraGATE"
+  4 "zebraDIV"
+  5 "zebraPULSE"
+  6 "zebraENC"
+  7 "zebraSYS"
+}
+symbols {
+  0 "P=$(P),R=$(Q):"
+  1 "ANDOR=AND"
+  2 "ANDOR=OR"
+}
+noScroll
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 295
+y 65
+w 640
+h 510
+lineColor index 1
+fillColor index 0
+numPoints 3
+xPoints {
+  0 295
+  1 935
+  2 935
+}
+yPoints {
+  0 575
+  1 575
+  2 65
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 815
+y 580
+w 55
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):SYS_RESET.PROC"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 525
+y 580
+w 45
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):SOFT_IN:B0"
+onLabel "IN1"
+offLabel "IN1"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 575
+y 580
+w 45
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):SOFT_IN:B1"
+onLabel "IN2"
+offLabel "IN2"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 625
+y 580
+w 45
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):SOFT_IN:B2"
+onLabel "IN3"
+offLabel "IN3"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 675
+y 580
+w 45
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):SOFT_IN:B3"
+onLabel "IN4"
+offLabel "IN4"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 470
+y 580
+w 50
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Soft In:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 725
+y 580
+w 90
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Block State:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 170
+y 550
+w 112
+h 52
+font "courier-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "PC buff overflow"
+  "Err 5"
+  "Err 6"
+  "Err 7"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 40
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "SYS1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 150
+y 40
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "SYS2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 530
+w 100
+h 20
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Error state"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 235
+y 580
+w 55
+h 25
+fgColor index 43
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-14.0"
+buttonLabel "Help"
+numCmds 1
+commandLabel {
+  0 "Help"
+}
+command {
+  0 "evince $(which zebra.edl | sed \"s|data/zebra.edl|documentation/TDI-CTRL-TNO-042-Zebra-Manual.pdf|\") &"
+}
+endObjectProperties
+

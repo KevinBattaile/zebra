@@ -1,0 +1,2569 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 159
+y 288
+w 1081
+h 576
+font "helvetica-bold-r-14.0"
+ctlFont "helvetica-bold-r-14.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 0
+ctlBgColor1 index 3
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 11
+title "Plot - $(zebra)"
+showGrid
+gridSize 5
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 275
+w 115
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 960
+y 275
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL1)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 1085
+h 30
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 2
+w 1075
+h 25
+lineColor index 1
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 3
+w 1075
+h 25
+lineColor index 11
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 2
+y 3
+w 1075
+h 24
+fgColor index 14
+bgColor index 3
+topShadowColor index 0
+botShadowColor index 0
+font "helvetica-bold-r-14.0"
+xPosOffset 5
+yPosOffset 5
+button3Popup
+invisible
+buttonLabel "tooltip"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "generic-tooltip"
+}
+setPosition {
+  0 "button"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2
+y 3
+w 1163
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 48
+value {
+  "Zebra Position compare Plot - $(zebra)"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 5
+y 35
+w 805
+h 535
+# Appearance
+border
+xLabel "Time (Time units)"
+yLabel "Enc / Div"
+y2Label "SysFilt"
+fgColor index 14
+bgColor index 0
+gridColor index 14
+font "helvetica-bold-r-14.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+showY2Axis
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 12
+xPv {
+  0 "$(zebra):PC_TIME"
+  1 "$(zebra):PC_TIME"
+  2 "$(zebra):PC_TIME"
+  3 "$(zebra):PC_TIME"
+  4 "$(zebra):PC_TIME"
+  5 "$(zebra):PC_TIME"
+  6 "$(zebra):PC_TIME"
+  7 "$(zebra):PC_TIME"
+  8 "$(zebra):PC_TIME"
+  9 "$(zebra):PC_TIME"
+  10 "$(zebra):PC_TIME"
+  11 "$(zebra):PC_TIME"
+}
+yPv {
+  0 "$(zebra):PC_ENC1"
+  1 "$(zebra):PC_ENC2"
+  2 "$(zebra):PC_ENC3"
+  3 "$(zebra):PC_ENC4"
+  4 "$(zebra):PC_DIV1"
+  5 "$(zebra):PC_DIV2"
+  6 "$(zebra):PC_DIV3"
+  7 "$(zebra):PC_DIV4"
+  8 "$(zebra):PC_FILT1"
+  9 "$(zebra):PC_FILT2"
+  10 "$(zebra):PC_FILT3"
+  11 "$(zebra):PC_FILT4"
+}
+plotSymbolType {
+  0 "diamond"
+  1 "diamond"
+  2 "diamond"
+  3 "diamond"
+  4 "circle"
+  5 "circle"
+  6 "circle"
+  7 "circle"
+  8 "square"
+  9 "square"
+  10 "square"
+  11 "square"
+}
+useY2Axis {
+  8 1
+  9 1
+  10 1
+  11 1
+}
+xSigned {
+  0 1
+  1 1
+  2 1
+  3 1
+  4 1
+  5 1
+  6 1
+  7 1
+  8 1
+  9 1
+  10 1
+  11 1
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+  4 1
+  5 1
+  6 1
+  7 1
+  8 1
+  9 1
+  10 1
+  11 1
+}
+plotColor {
+  0 index 30
+  1 index 20
+  2 index 15
+  3 index 40
+  4 index 25
+  5 index 24
+  6 index 19
+  7 index 37
+  8 index 5
+  9 index 10
+  10 index 75
+  11 index 47
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 50
+h 30
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 48
+h 29
+lineColor index 1
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 2
+w 48
+h 29
+lineColor index 11
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 2
+w 47
+h 27
+lineColor index 49
+fill
+fillColor index 48
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 6
+w 4
+h 3
+lineColor index 1
+fill
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 0
+y 0
+w 50
+h 30
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "PLOT"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 926
+y 545
+w 149
+h 25
+fgColor index 46
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 924
+y 485
+w 151
+h 25
+fgColor index 25
+bgColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):ARRAY_UPDATE.SCAN"
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 815
+y 485
+w 85
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Update rate"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 815
+y 515
+w 85
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Time units"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 926
+y 515
+w 149
+h 25
+controlPv "$(zebra):PC_TSPRE:RBV"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 815
+y 35
+w 35
+h 355
+lineColor index 14
+fill
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 45
+w 25
+h 5
+lineColor index 30
+fill
+fillColor index 30
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 35
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Enc1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 35
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 35
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>0&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 75
+w 25
+h 5
+lineColor index 20
+fill
+fillColor index 20
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 65
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Enc2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 65
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 65
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>1&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 105
+w 25
+h 5
+lineColor index 15
+fill
+fillColor index 15
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 95
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Enc3"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 95
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 95
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>2&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 125
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 125
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>3&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 125
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Enc4"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 135
+w 25
+h 5
+lineColor index 40
+fill
+fillColor index 40
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 165
+w 25
+h 5
+lineColor index 25
+fill
+fillColor index 25
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 155
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Div1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 155
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 155
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>6&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 195
+w 25
+h 5
+lineColor index 24
+fill
+fillColor index 24
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 185
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Div2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 185
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 185
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>7&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 225
+w 25
+h 5
+lineColor index 19
+fill
+fillColor index 19
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 215
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Div3"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 215
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 215
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>8&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 245
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 245
+w 175
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>9&1\}($(zebra):PC_BIT_CAP)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 245
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Div4"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 255
+w 25
+h 5
+lineColor index 37
+fill
+fillColor index 37
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 285
+w 25
+h 5
+lineColor index 5
+fill
+fillColor index 5
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 275
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "SysFilt1"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 315
+w 25
+h 5
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 305
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "SysFilt2"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 345
+w 25
+h 5
+lineColor index 75
+fill
+fillColor index 75
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 335
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "SysFilt3"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 375
+w 25
+h 5
+lineColor index 47
+fill
+fillColor index 47
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 855
+y 365
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "SysFilt4"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 815
+y 455
+w 225
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Data Download in Progress"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1050
+y 455
+w 24
+h 24
+controlPv "$(zebra):ARRAY_ACQ"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 155
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 155
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 155
+w 115
+h 25
+controlPv "$(zebra):PC_DIV1_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>6&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 185
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 185
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 185
+w 115
+h 25
+controlPv "$(zebra):PC_DIV2_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>7&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 215
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 215
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 215
+w 115
+h 25
+controlPv "$(zebra):PC_DIV3_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>8&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 245
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 245
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 245
+w 115
+h 25
+controlPv "$(zebra):PC_DIV4_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>9&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 35
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 35
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 35
+w 80
+h 25
+controlPv "$(zebra):PC_ENC1_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1040
+y 35
+w 35
+h 25
+controlPv "$(zebra):M1:EGU"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>0&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 65
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 65
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 65
+w 80
+h 25
+controlPv "$(zebra):PC_ENC2_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1040
+y 65
+w 35
+h 25
+controlPv "$(zebra):M2:EGU"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>1&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 95
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 95
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1040
+y 95
+w 35
+h 25
+controlPv "$(zebra):M3:EGU"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 95
+w 80
+h 25
+controlPv "$(zebra):PC_ENC3_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>2&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 125
+w 175
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 900
+y 125
+w 60
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Last Val"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 125
+w 80
+h 25
+controlPv "$(zebra):PC_ENC4_LAST"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1040
+y 125
+w 35
+h 25
+controlPv "$(zebra):M4:EGU"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>3&1\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 395
+w 115
+h 25
+controlPv "$(zebra):PC_NUM_CAP"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 815
+y 395
+w 135
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Points Captured"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 815
+y 425
+w 140
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Points Downloaded"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 425
+w 115
+h 25
+controlPv "$(zebra):PC_NUM_DOWN"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 920
+y 275
+w 35
+h 25
+
+beginGroup
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 275
+w 35
+h 25
+controlPv "$(zebra):PC_FILTSEL1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>4&3\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 275
+w 115
+h 25
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 275
+w 115
+h 25
+controlPv "$(zebra):PC_FILTSEL1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL1)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 305
+w 115
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 960
+y 305
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL2)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 920
+y 305
+w 35
+h 25
+
+beginGroup
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 305
+w 35
+h 25
+controlPv "$(zebra):PC_FILTSEL2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>4&3\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 305
+w 115
+h 25
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 305
+w 115
+h 25
+controlPv "$(zebra):PC_FILTSEL2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL2)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 335
+w 115
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 960
+y 335
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL3)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 920
+y 335
+w 35
+h 25
+
+beginGroup
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 335
+w 35
+h 25
+controlPv "$(zebra):PC_FILTSEL3"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>4&3\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 335
+w 115
+h 25
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 335
+w 115
+h 25
+controlPv "$(zebra):PC_FILTSEL3:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL3)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 365
+w 115
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 960
+y 365
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 8
+bgColor index 3
+useDisplayBg
+value {
+  "Not Captured"
+}
+border
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL4)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 920
+y 365
+w 35
+h 25
+
+beginGroup
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 365
+w 35
+h 25
+controlPv "$(zebra):PC_FILTSEL4"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{A>>4&3\}($(zebra):PC_BIT_CAP)"
+visMin "1"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 365
+w 115
+h 25
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 960
+y 365
+w 115
+h 25
+controlPv "$(zebra):PC_FILTSEL4:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A>>4&B<32)||(A>>5&B>31)\}($(zebra):PC_BIT_CAP,$(zebra):PC_FILTSEL4)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 370
+w 15
+h 15
+lineColor index 47
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 340
+w 15
+h 15
+lineColor index 75
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 310
+w 15
+h 15
+lineColor index 10
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 280
+w 15
+h 15
+lineColor index 5
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 160
+w 15
+h 15
+lineColor index 25
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 190
+w 15
+h 15
+lineColor index 24
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 220
+w 15
+h 15
+lineColor index 19
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 825
+y 250
+w 15
+h 15
+lineColor index 37
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 824
+y 38
+w 17
+h 18
+lineColor index 30
+fillColor index 3
+lineWidth 3
+closePolygon
+numPoints 4
+xPoints {
+  0 833
+  1 824
+  2 833
+  3 841
+}
+yPoints {
+  0 39
+  1 48
+  2 56
+  3 48
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 824
+y 128
+w 17
+h 18
+lineColor index 40
+fillColor index 3
+lineWidth 3
+closePolygon
+numPoints 4
+xPoints {
+  0 833
+  1 824
+  2 833
+  3 841
+}
+yPoints {
+  0 129
+  1 138
+  2 146
+  3 138
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 824
+y 98
+w 17
+h 18
+lineColor index 15
+fillColor index 3
+lineWidth 3
+closePolygon
+numPoints 4
+xPoints {
+  0 833
+  1 824
+  2 833
+  3 841
+}
+yPoints {
+  0 99
+  1 108
+  2 116
+  3 108
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 824
+y 68
+w 17
+h 18
+lineColor index 20
+fillColor index 3
+lineWidth 3
+closePolygon
+numPoints 4
+xPoints {
+  0 833
+  1 824
+  2 833
+  3 841
+}
+yPoints {
+  0 69
+  1 78
+  2 86
+  3 78
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 814
+y 545
+w 107
+h 25
+fgColor index 43
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-14.0"
+buttonLabel "areaDetector"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "zebraAD.edl"
+}
+endObjectProperties
+

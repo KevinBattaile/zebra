@@ -1,0 +1,1384 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1088
+y 170
+w 640
+h 510
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 25
+ctlBgColor1 index 3
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 11
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 640
+h 510
+lineColor index 5
+fill
+fillColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 195
+y 415
+w 218
+h 64
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "On a rising (or falling) edge of:"
+  "* INP1, OUT will be set high"
+  "* INP2, OUT will be reset low"
+  "* Both, OUT will be reset low"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 210
+w 280
+h 160
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 475
+y 215
+w 110
+h 25
+controlPv "$(zebra):GATE4_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 215
+w 35
+h 25
+controlPv "$(zebra):GATE4_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 215
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1 (set)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 340
+y 200
+w 52
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  GATE4  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 475
+y 275
+w 110
+h 25
+controlPv "$(zebra):GATE4_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 275
+w 35
+h 25
+controlPv "$(zebra):GATE4_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 275
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2 (reset)"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 215
+w 24
+h 24
+controlPv "$(zebra):GATE4_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 275
+w 24
+h 24
+controlPv "$(zebra):GATE4_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 340
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 345
+y 335
+w 270
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 345
+  1 615
+}
+yPoints {
+  0 335
+  1 335
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 340
+w 24
+h 24
+controlPv "$(zebra):GATE4_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 30
+w 280
+h 160
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 475
+y 35
+w 110
+h 25
+controlPv "$(zebra):GATE2_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 35
+w 35
+h 25
+controlPv "$(zebra):GATE2_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 35
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1 (set)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 340
+y 20
+w 52
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  GATE2  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 475
+y 95
+w 110
+h 25
+controlPv "$(zebra):GATE2_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 95
+w 35
+h 25
+controlPv "$(zebra):GATE2_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 95
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2 (reset)"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 35
+w 24
+h 24
+controlPv "$(zebra):GATE2_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 95
+w 24
+h 24
+controlPv "$(zebra):GATE2_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 160
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 345
+y 155
+w 270
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 345
+  1 615
+}
+yPoints {
+  0 155
+  1 155
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 160
+w 24
+h 24
+controlPv "$(zebra):GATE2_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 30
+w 280
+h 160
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 155
+y 35
+w 110
+h 25
+controlPv "$(zebra):GATE1_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 35
+w 35
+h 25
+controlPv "$(zebra):GATE1_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 35
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1 (set)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 20
+w 53
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  GATE1  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 155
+y 95
+w 110
+h 25
+controlPv "$(zebra):GATE1_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 95
+w 35
+h 25
+controlPv "$(zebra):GATE1_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 95
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2 (reset)"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 35
+w 24
+h 24
+controlPv "$(zebra):GATE1_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 95
+w 24
+h 24
+controlPv "$(zebra):GATE1_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 160
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 25
+y 155
+w 270
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 25
+  1 295
+}
+yPoints {
+  0 155
+  1 155
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 160
+w 24
+h 24
+controlPv "$(zebra):GATE1_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 65
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B0"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 65
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 125
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 125
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B4"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 65
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B1"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 65
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 125
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 125
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B5"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 245
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B3"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 245
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 345
+y 305
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 305
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B7"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 210
+w 280
+h 160
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 155
+y 215
+w 110
+h 25
+controlPv "$(zebra):GATE3_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 215
+w 35
+h 25
+controlPv "$(zebra):GATE3_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 215
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1 (set)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 200
+w 53
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  GATE3  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 155
+y 275
+w 110
+h 25
+controlPv "$(zebra):GATE3_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 275
+w 35
+h 25
+controlPv "$(zebra):GATE3_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 275
+w 100
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2 (reset)"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 215
+w 24
+h 24
+controlPv "$(zebra):GATE3_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 275
+w 24
+h 24
+controlPv "$(zebra):GATE3_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 340
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 25
+y 335
+w 270
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 25
+  1 295
+}
+yPoints {
+  0 335
+  1 335
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 340
+w 24
+h 24
+controlPv "$(zebra):GATE3_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 305
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B6"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 305
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 245
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 245
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:B2"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+

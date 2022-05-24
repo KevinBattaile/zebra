@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<asyn.AsynIP name="zebra_ip" port="172.23.241.3:7012"/>
+	<zebra.zebra MAXBUF="500" P="AD-ZEBRA-01" PORT="zebra_ad" Q="" serialPort="zebra_ip"/>
+</components>

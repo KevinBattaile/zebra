@@ -1,0 +1,6 @@
+# Place any example specific dependencies here
+TPMAC=$(SUPPORT)/tpmac/3-11dls15
+PMACCOORD=$(SUPPORT)/pmacCoord/1-59-2
+PMACUTIL=$(SUPPORT)/pmacUtil/5-6-8
+ARAVISGIGE=$(SUPPORT)/aravisGigE/0-1-15dls11
+FFMPEGSERVER=$(SUPPORT)/ffmpegServer/3-1dls2-1

@@ -1,0 +1,151 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 960
+y 132
+w 400
+h 903
+font "arial-bold-r-12.0"
+ctlFont "arial-bold-r-12.0"
+btnFont "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 25
+ctlBgColor1 index 3
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 11
+showGrid
+gridSize 5
+endScreenProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 3
+w 391
+h 25
+fgColor index 14
+bgColor index 3
+selectColor index 4
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "LOC\\$(!W)menu=e:0,CAM,ROI,HDF5"
+font "arial-bold-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 4
+y 29
+w 392
+h 832
+lineColor index 1
+fillColor index 3
+numPoints 3
+xPoints {
+  0 4
+  1 396
+  2 396
+}
+yPoints {
+  0 861
+  1 861
+  2 29
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 4
+y 29
+w 392
+h 832
+lineColor index 11
+fillColor index 3
+numPoints 3
+xPoints {
+  0 4
+  1 4
+  2 396
+}
+yPoints {
+  0 861
+  1 29
+  2 29
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 30
+w 390
+h 830
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+displaySource "menu"
+filePv "LOC\\$(!W)menu"
+sizeOfs 6
+numDsps 3
+displayFileName {
+  0 "zebraDetector.edl"
+  1 "NDROI.edl"
+  2 "NDFileHDF5.edl"
+}
+symbols {
+  0 "P=$(P),R=$(R),label=cam"
+  1 "P=$(P),R=:ROI:,label=roi"
+  2 "P=$(P),R=:HDF:,label=HDF5"
+}
+propagateMacros {
+  0 0
+  1 0
+  2 0
+}
+noScroll
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 294
+y 869
+w 101
+h 27
+fgColor index 46
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "arial-medium-r-18.0"
+3d
+endObjectProperties
+

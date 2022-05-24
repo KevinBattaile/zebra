@@ -1,0 +1,2763 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 914
+y 659
+w 640
+h 510
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 25
+ctlBgColor1 index 3
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 11
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 640
+h 510
+lineColor index 5
+fill
+fillColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 420
+w 515
+h 48
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "The output of an $(ANDOR) gates is the logical $(ANDOR) of its 4 inputs. "
+  "If Use=No, then the input is ignored"
+  "If Invert=Yes, then the input is inverted before going into the gate"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 305
+h 190
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 20
+w 305
+h 180
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 170
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)1_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 45
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 45
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 75
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 75
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 105
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP3:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 105
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP3"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 135
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP4:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 135
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)1_INP4"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 45
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 10
+w 81
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  $(ANDOR)1  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 90
+y 25
+w 180
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input Source, Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 75
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 105
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 135
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP4"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 270
+y 25
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Invert"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 45
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_INV:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 50
+y 25
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Use?"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 45
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_ENA:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 75
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_INV:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 75
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_ENA:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 105
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_ENA:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 105
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_INV:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 135
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_INV:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 135
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)1_ENA:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 45
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)1_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 75
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)1_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 105
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)1_INP3:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 135
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)1_INP4:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 170
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 15
+y 165
+w 295
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 15
+  1 310
+}
+yPoints {
+  0 165
+  1 165
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 10
+w 305
+h 190
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 20
+w 305
+h 180
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 170
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)2_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 45
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 45
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 75
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 75
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 105
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP3:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 105
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP3"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 135
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP4:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 135
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)2_INP4"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 45
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 325
+y 10
+w 80
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  $(ANDOR)2  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 405
+y 25
+w 180
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input Source, Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 75
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 105
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 135
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP4"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 25
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Invert"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 45
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_INV:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 365
+y 25
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Use?"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 45
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_ENA:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 75
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_INV:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 75
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_ENA:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 105
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_ENA:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 105
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_INV:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 135
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_INV:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 135
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)2_ENA:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 45
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)2_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 75
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)2_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 105
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)2_INP3:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 135
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)2_INP4:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 170
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 330
+y 165
+w 295
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 330
+  1 625
+}
+yPoints {
+  0 165
+  1 165
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 210
+w 305
+h 190
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 220
+w 305
+h 180
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 370
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)4_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 245
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 245
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 275
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 275
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 305
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP3:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 305
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP3"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 445
+y 335
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP4:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 405
+y 335
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)4_INP4"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 245
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 325
+y 210
+w 80
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  $(ANDOR)4  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 405
+y 225
+w 180
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input Source, Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 275
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 305
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 335
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP4"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 225
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Invert"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 245
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_INV:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 365
+y 225
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Use?"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 245
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_ENA:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 275
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_INV:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 275
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_ENA:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 305
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_ENA:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 305
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_INV:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 335
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_INV:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 365
+y 335
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)4_ENA:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 245
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)4_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 275
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)4_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 305
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)4_INP3:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 335
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)4_INP4:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 370
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 330
+y 365
+w 295
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 330
+  1 625
+}
+yPoints {
+  0 365
+  1 365
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 210
+w 305
+h 190
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 220
+w 305
+h 180
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 370
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)3_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 245
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP1:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 245
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 275
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP2:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 275
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP2"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 305
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP3:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 305
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP3"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 130
+y 335
+w 110
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP4:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 90
+y 335
+w 35
+h 25
+controlPv "$(zebra):$(ANDOR)3_INP4"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 245
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 210
+w 81
+h 13
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  $(ANDOR)3  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 90
+y 225
+w 180
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input Source, Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 275
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 305
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 335
+w 35
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "INP4"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 270
+y 225
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Invert"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 245
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_INV:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 50
+y 225
+w 40
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Use?"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 245
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_ENA:B0"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 275
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_INV:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 275
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_ENA:B1"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 305
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_ENA:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 305
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_INV:B2"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 335
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_INV:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 335
+w 35
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):$(ANDOR)3_ENA:B3"
+onLabel "Yes"
+offLabel "No"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 245
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)3_INP1:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 275
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)3_INP2:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 305
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)3_INP3:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 335
+w 24
+h 24
+controlPv "$(zebra):$(ANDOR)3_INP4:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 370
+w 45
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "OUT"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 15
+y 365
+w 295
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 15
+  1 310
+}
+yPoints {
+  0 365
+  1 365
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

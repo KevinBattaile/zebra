@@ -1,0 +1,1560 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 678
+y 491
+w 640
+h 510
+font "helvetica-bold-r-12.0"
+ctlFont "helvetica-bold-r-12.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 25
+ctlBgColor1 index 3
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 11
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 640
+h 510
+lineColor index 5
+fill
+fillColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 120
+y 430
+w 326
+h 48
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "On a rising edge of its input, a PULSE gate will:"
+  "* Keep its output low for delay time units"
+  "* Set its output high for width time units"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 330
+y 225
+w 290
+h 195
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 475
+y 230
+w 110
+h 25
+controlPv "$(zebra):PULSE4_INP:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 230
+w 35
+h 25
+controlPv "$(zebra):PULSE4_INP"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 230
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 330
+y 215
+w 64
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  PULSE4  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 355
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Time Units"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 320
+w 180
+h 25
+controlPv "$(zebra):PULSE4_WID"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 290
+w 180
+h 25
+controlPv "$(zebra):PULSE4_DLY"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 290
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Delay before"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 325
+w 90
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Pulse Width"
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 355
+w 180
+h 25
+fgColor index 25
+bgColor index 3
+selectColor index 4
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):PULSE4_PRE"
+indicatorPv "$(zebra):PULSE4_PRE:RBV"
+font "helvetica-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 230
+w 24
+h 24
+controlPv "$(zebra):PULSE4_INP:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 335
+y 385
+w 280
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 335
+  1 615
+}
+yPoints {
+  0 385
+  1 385
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 15
+w 290
+h 195
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 165
+y 20
+w 110
+h 25
+controlPv "$(zebra):PULSE1_INP:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 125
+y 20
+w 35
+h 25
+controlPv "$(zebra):PULSE1_INP"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 20
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 5
+w 64
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  PULSE1  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 145
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Time Units"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 125
+y 110
+w 180
+h 25
+controlPv "$(zebra):PULSE1_WID"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 125
+y 80
+w 180
+h 25
+controlPv "$(zebra):PULSE1_DLY"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 80
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Delay before"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 115
+w 90
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Pulse Width"
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 145
+w 180
+h 25
+fgColor index 25
+bgColor index 3
+selectColor index 4
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):PULSE1_PRE"
+indicatorPv "$(zebra):PULSE1_PRE:RBV"
+font "helvetica-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 20
+w 24
+h 24
+controlPv "$(zebra):PULSE1_INP:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 180
+w 24
+h 24
+controlPv "$(zebra):PULSE1_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 25
+y 175
+w 280
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 25
+  1 305
+}
+yPoints {
+  0 175
+  1 175
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 50
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 50
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:BC"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 260
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 435
+y 260
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:BF"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 330
+y 15
+w 290
+h 195
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 475
+y 20
+w 110
+h 25
+controlPv "$(zebra):PULSE2_INP:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 20
+w 35
+h 25
+controlPv "$(zebra):PULSE2_INP"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 20
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 330
+y 5
+w 64
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  PULSE2  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 145
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Time Units"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 110
+w 180
+h 25
+controlPv "$(zebra):PULSE2_WID"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 435
+y 80
+w 180
+h 25
+controlPv "$(zebra):PULSE2_DLY"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 80
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Delay before"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 115
+w 90
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Pulse Width"
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 145
+w 180
+h 25
+fgColor index 25
+bgColor index 3
+selectColor index 4
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):PULSE2_PRE"
+indicatorPv "$(zebra):PULSE2_PRE:RBV"
+font "helvetica-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 20
+w 24
+h 24
+controlPv "$(zebra):PULSE2_INP:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 335
+y 175
+w 280
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 335
+  1 615
+}
+yPoints {
+  0 175
+  1 175
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 50
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 435
+y 50
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:BD"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 180
+w 24
+h 24
+controlPv "$(zebra):SYS_STATERR.B0"
+lineColor index 14
+onColor index 20
+offColor index 24
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 55
+y 180
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trig while active"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 185
+y 180
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Output Pulse"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 180
+w 24
+h 24
+controlPv "$(zebra):SYS_STATERR.B1"
+lineColor index 14
+onColor index 20
+offColor index 24
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 365
+y 180
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trig while active"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 495
+y 180
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Output Pulse"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 180
+w 24
+h 24
+controlPv "$(zebra):PULSE2_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 390
+w 24
+h 24
+controlPv "$(zebra):SYS_STATERR.B3"
+lineColor index 14
+onColor index 20
+offColor index 24
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 365
+y 390
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trig while active"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 495
+y 390
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Output Pulse"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 390
+w 24
+h 24
+controlPv "$(zebra):PULSE4_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 215
+w 290
+h 205
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "PULSE block 3 is broken "
+  "in this version of Zebra."
+  "If you need it, then please "
+  "update to firmware 0x24 or "
+  "later"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 215
+w 290
+h 205
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 225
+w 290
+h 195
+lineColor index 14
+fill
+fillColor index 3
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 165
+y 230
+w 110
+h 25
+controlPv "$(zebra):PULSE3_INP:STR"
+fgColor index 16
+fgAlarm
+bgColor index 10
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 125
+y 230
+w 35
+h 25
+controlPv "$(zebra):PULSE3_INP"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 230
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Input"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 215
+w 64
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 7
+value {
+  "  PULSE3  "
+}
+autoSize
+border
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 355
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Time Units"
+}
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 125
+y 320
+w 180
+h 25
+controlPv "$(zebra):PULSE3_WID"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 125
+y 290
+w 180
+h 25
+controlPv "$(zebra):PULSE3_DLY"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 290
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Delay before"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 325
+w 90
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Pulse Width"
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 355
+w 180
+h 25
+fgColor index 25
+bgColor index 3
+selectColor index 4
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):PULSE3_PRE"
+indicatorPv "$(zebra):PULSE3_PRE:RBV"
+font "helvetica-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 230
+w 24
+h 24
+controlPv "$(zebra):PULSE3_INP:STA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 25
+y 385
+w 280
+h 0
+lineColor index 14
+fillColor index 3
+numPoints 2
+xPoints {
+  0 25
+  1 305
+}
+yPoints {
+  0 385
+  1 385
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 125
+y 260
+w 180
+h 25
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(zebra):POLARITY:BE"
+onLabel "Falling Edge"
+offLabel "Rising Edge"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+controlBitPos 0
+readBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 260
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trigger on"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 390
+w 24
+h 24
+controlPv "$(zebra):PULSE3_OUT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 185
+y 390
+w 95
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Output Pulse"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 55
+y 390
+w 115
+h 25
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trig while active"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 390
+w 24
+h 24
+controlPv "$(zebra):SYS_STATERR.B2"
+lineColor index 14
+onColor index 20
+offColor index 24
+numBits 1
+endObjectProperties
+
+endGroup
+
+visPv "$(zebra):SYS_VER"
+visInvert
+visMin "34"
+visMax "36"
+endObjectProperties
+

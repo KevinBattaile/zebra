@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <wuid>-18b7b373:14a1bc51412:-7951</wuid>
+  <boy_version>3.2.10.201405280937</boy_version>
+  <scripts />
+  <show_ruler>true</show_ruler>
+  <height>740</height>
+  <name></name>
+  <snap_to_geometry>true</snap_to_geometry>
+  <show_grid>true</show_grid>
+  <background_color>
+    <color red="240" green="240" blue="240" />
+  </background_color>
+  <foreground_color>
+    <color red="192" green="192" blue="192" />
+  </foreground_color>
+  <widget_type>Display</widget_type>
+  <show_close_button>true</show_close_button>
+  <width>350</width>
+  <rules />
+  <show_edit_range>true</show_edit_range>
+  <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <actions hook="false" hook_all="false" />
+  <y>-1</y>
+  <x>-1</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>-18b7b373:14a1bc51412:-78c6</wuid>
+    <scripts />
+    <height>560</height>
+    <name>Sys1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>175</width>
+    <border_style>13</border_style>
+    <rules />
+    <fc>false</fc>
+    <lock_children>true</lock_children>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="0" blue="0" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false" hook_all="false" />
+    <x>0</x>
+    <tooltip></tooltip>
+    <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>-18b7b373:14a1bc51412:-78c5</wuid>
+      <bitReverse>true</bitReverse>
+      <scripts />
+      <square_led>false</square_led>
+      <startBit>0</startBit>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <height>261</height>
+      <name>bmSys1_1</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <pv_name>$(zebra):SYS_STAT1LO</pv_name>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Byte Monitor</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <numBits>16</numBits>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      </font>
+      <width>120</width>
+      <border_style>0</border_style>
+      <effect_3d>true</effect_3d>
+      <label>
+        <s>0: DISCONNECT</s>
+        <s>1: IN1_TTL</s>
+        <s>2: IN1_NIM</s>
+        <s>3: IN1_LVDS</s>
+        <s>4: IN2_TTL</s>
+        <s>5: IN2_NIM</s>
+        <s>6: IN2_LVDS</s>
+        <s>7: IN3_TTL</s>
+        <s>8: IN3_OC</s>
+        <s>9: IN3_LVDS</s>
+        <s>10: IN4_TTL</s>
+        <s>11: IN4_CMP</s>
+        <s>12: IN4_PECL</s>
+        <s>13: IN5_ENCA</s>
+        <s>14: IN5_ENCB</s>
+        <s>15: IN5_ENCZ</s>
+      </label>
+      <rules />
+      <pv_value />
+      <border_width>1</border_width>
+      <horizontal>false</horizontal>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="false" hook_all="false" />
+      <y>0</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>0</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>-18b7b373:14a1bc51412:-78c4</wuid>
+      <bitReverse>true</bitReverse>
+      <scripts />
+      <square_led>false</square_led>
+      <startBit>0</startBit>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <height>261</height>
+      <name>bmSys1_2</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <pv_name>$(zebra):SYS_STAT1HI</pv_name>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Byte Monitor</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <numBits>16</numBits>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      </font>
+      <width>120</width>
+      <border_style>0</border_style>
+      <effect_3d>true</effect_3d>
+      <label>
+        <s>16: IN5_CONN</s>
+        <s>17: IN6_ENCA</s>
+        <s>18: IN6_ENCB</s>
+        <s>19: IN6_ENCZ</s>
+        <s>20: IN6_CONN</s>
+        <s>21: IN7_ENCA</s>
+        <s>22: IN7_ENCB</s>
+        <s>23: IN7_ENCZ</s>
+        <s>24: IN7_CONN</s>
+        <s>25: IN8_ENCA</s>
+        <s>26: IN8_ENCB</s>
+        <s>27: IN8_ENCZ</s>
+        <s>28: IN8_CONN</s>
+        <s>29: PC_ARM</s>
+        <s>30: PC_GATE</s>
+        <s>31: PC_PULSE</s>
+      </label>
+      <rules />
+      <pv_value />
+      <border_width>1</border_width>
+      <horizontal>false</horizontal>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="false" hook_all="false" />
+      <y>255</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>0</x>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>-18b7b373:14a1bc51412:-78c3</wuid>
+    <scripts />
+    <height>560</height>
+    <name>Sys2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>175</width>
+    <border_style>13</border_style>
+    <rules />
+    <fc>false</fc>
+    <lock_children>true</lock_children>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="0" blue="0" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false" hook_all="false" />
+    <x>174</x>
+    <tooltip></tooltip>
+    <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>-18b7b373:14a1bc51412:-78c2</wuid>
+      <bitReverse>true</bitReverse>
+      <scripts />
+      <square_led>false</square_led>
+      <startBit>0</startBit>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <height>261</height>
+      <name>bmSys2_1</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <pv_name>$(zebra):SYS_STAT2LO</pv_name>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Byte Monitor</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <numBits>16</numBits>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      </font>
+      <width>120</width>
+      <border_style>0</border_style>
+      <effect_3d>true</effect_3d>
+      <label>
+        <s>32: AND1</s>
+        <s>33: AND2</s>
+        <s>34: AND3</s>
+        <s>35: AND4</s>
+        <s>36: OR1</s>
+        <s>37: OR2</s>
+        <s>38: OR3</s>
+        <s>39: OR4</s>
+        <s>40: GATE1</s>
+        <s>41: GATE2</s>
+        <s>42: GATE3</s>
+        <s>43: GATE4</s>
+        <s>44: DIV1_OUTD</s>
+        <s>45: DIV2_OUTD</s>
+        <s>46: DIV3_OUTD</s>
+        <s>47: DIV4_OUTD</s>
+      </label>
+      <rules />
+      <pv_value />
+      <border_width>1</border_width>
+      <horizontal>false</horizontal>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="false" hook_all="false" />
+      <y>0</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>0</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>-18b7b373:14a1bc51412:-78c1</wuid>
+      <bitReverse>true</bitReverse>
+      <scripts />
+      <square_led>false</square_led>
+      <startBit>0</startBit>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <height>261</height>
+      <name>bmSys2_2</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <pv_name>$(zebra):SYS_STAT2HI</pv_name>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Byte Monitor</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <numBits>16</numBits>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      </font>
+      <width>135</width>
+      <border_style>0</border_style>
+      <effect_3d>true</effect_3d>
+      <label>
+        <s>48: DIV1_OUTN</s>
+        <s>49: DIV2_OUTN</s>
+        <s>50: DIV3_OUTN</s>
+        <s>51: DIV4_OUTN</s>
+        <s>52: PULSE1</s>
+        <s>53: PULSE2</s>
+        <s>54: PULSE3</s>
+        <s>55: PULSE4</s>
+        <s>56: QUAD_OUTA</s>
+        <s>57: QUAD_OUTB</s>
+        <s>58: CLOCK_1KHZ</s>
+        <s>59: CLOCK_1MHZ</s>
+        <s>60: SOFT_IN1</s>
+        <s>61: SOFT_IN2</s>
+        <s>62: SOFT_IN3</s>
+        <s>63: SOFT_IN4</s>
+      </label>
+      <rules />
+      <pv_value />
+      <border_width>1</border_width>
+      <horizontal>false</horizontal>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="false" hook_all="false" />
+      <y>255</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>0</x>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>-18b7b373:14a1bc51412:-78c0</wuid>
+    <scripts />
+    <height>187</height>
+    <name>Error State:</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>true</show_scrollbar>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>349</width>
+    <border_style>13</border_style>
+    <rules />
+    <fc>false</fc>
+    <lock_children>true</lock_children>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="0" blue="0" />
+    </border_color>
+    <y>552</y>
+    <actions hook="false" hook_all="false" />
+    <x>0</x>
+    <tooltip></tooltip>
+    <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>-18b7b373:14a1bc51412:-78bf</wuid>
+      <bitReverse>true</bitReverse>
+      <scripts />
+      <square_led>false</square_led>
+      <startBit>0</startBit>
+      <on_color>
+        <color name="Major" red="255" green="0" blue="0" />
+      </on_color>
+      <height>145</height>
+      <name>Byte Monitor</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <off_color>
+        <color red="165" green="42" blue="42" />
+      </off_color>
+      <pv_name>$(zebra):SYS_STATERR</pv_name>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Byte Monitor</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <numBits>8</numBits>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      </font>
+      <width>307</width>
+      <border_style>0</border_style>
+      <effect_3d>true</effect_3d>
+      <label>
+        <s>PULSE1 TRIG WHILE ACTIVE</s>
+        <s>PULSE2 TRIG WHILE ACTIVE</s>
+        <s>PULSE3 TRIG WHILE ACTIVE</s>
+        <s>PULSE4 TRIG WHILE ACTIVE</s>
+        <s>PC BUFF OVERFLOW</s>
+        <s>ERR5</s>
+        <s>ERR6</s>
+        <s>ERR7</s>
+      </label>
+      <rules />
+      <pv_value />
+      <border_width>1</border_width>
+      <horizontal>false</horizontal>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="false" hook_all="false" />
+      <y>0</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>0</x>
+    </widget>
+  </widget>
+</display>

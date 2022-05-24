@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<components arch="windows-x64">
+	<!--<asyn.AsynSerial baud="115200" bits="8" name="ty_zebra" parity="None" port="/dev/ttyUSB0" simulation="localhost:7001" stop="1"/>-->
+	<asyn.AsynIP name="ty_zebra" port="172.23.241.1:7012" simulation="localhost:7001"/>
+	<!--<asyn.AsynIP name="ty_fgen" port="172.23.243.241:5025"/>-->
+	<zebra.zebra M2DIR="-" M3DIR="-" P="TESTZEBRA" PORT="ZEBRA" Q=":ZEBRA" serialPort="ty_zebra"/>
+	<zebra.zebraLastDivDiff DIV="1" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ1"/>
+	<zebra.zebraLastDivDiff DIV="2" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ2"/>
+	<zebra.zebraLastDivDiff DIV="3" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ3"/>
+	<zebra.zebraLastDivDiff DIV="4" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ4"/>
+</components>

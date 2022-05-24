@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<tpmac.pmacAsynIPPort IP="172.23.253.11" name="BRICK1port" simulation="172.23.253.11"/>
+	<pmacUtil.autohome GRP1="All" P="TESTZEBRA" PLC="11" PORT="BRICK1port" name="HOME"/>
+	<tpmac.GeoBrick NAxes="16" Port="BRICK1port" name="BRICK1"/>
+	<tpmac.pmacDisableLimitsCheck Controller="BRICK1"/>
+	<pmacUtil.dls_pmac_asyn_motor ADDR="5" DESC="Motor 1" DHLM="1300" DLLM="-100" EGU="deg" M=":M1" MRES="0.0036" P="TESTZEBRA" PORT="BRICK1" PREC="3" SPORT="BRICK1port" TWV="1" UEIP="1" VELO="90" name="MOTORS.M1"/>
+	<pmacUtil.dls_pmac_asyn_motor ADDR="6" DESC="Motor 2" DHLM="1000" DLLM="-1000" EGU="mm" M=":M2" MRES="0.0001" P="TESTZEBRA" PORT="BRICK1" PREC="3" SPORT="BRICK1port" TWV="0.1" UEIP="1" VELO="1" name="MOTORS.M2"/>
+	<pmacUtil.dls_pmac_asyn_motor ADDR="7" DESC="Motor 3" DHLM="1000" DLLM="-1000" EGU="mm" M=":M3" MRES="0.0001" P="TESTZEBRA" PORT="BRICK1" PREC="3" SPORT="BRICK1port" TWV="0.1" UEIP="1" VELO="1" name="MOTORS.M3"/>
+	<!--<asyn.AsynSerial baud="115200" bits="8" name="ty_zebra" parity="None" port="/dev/ttyUSB0" simulation="localhost:7001" stop="1"/>-->
+	<asyn.AsynIP name="ty_zebra" port="172.23.241.2:7018" simulation="localhost:7001"/>
+	<zebra.zebra M1="TESTZEBRA:M1" M2="TESTZEBRA:M2" M2DIR="-" M3="TESTZEBRA:M3" M3DIR="-" P="TESTZEBRA" PORT="ZEBRA" Q=":ZEBRA" serialPort="ty_zebra"/>
+	<zebra.zebraLastDivDiff DIV="1" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ1"/>
+	<zebra.zebraLastDivDiff DIV="2" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ2"/>
+	<zebra.zebraLastDivDiff DIV="3" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ3"/>
+	<zebra.zebraLastDivDiff DIV="4" P="TESTZEBRA" Q=":ZEBRA" name="FREQS.FREQ4"/>
+	<!--<aravisGigE.aravisCamera ADDR="0" CLASS="Prosilica_GC" ID="Allied Vision Technologies-02-2166A-06844" P="TESTZEBRA" PORT="CAM.CAM" R=":CAM:" TIMEOUT="1"/>-->
+	<!--<ffmpegServer.diagnosticPlugins CAM="CAM.CAM" HTTP_PORT="8081" P="TESTZEBRA" PORTPREFIX="CAM"/>-->
+</components>
